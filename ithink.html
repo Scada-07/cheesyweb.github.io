@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- gotta steal the css cuz im too lazy -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <title>Alex Todadze</title>
+</head>
+<body>
+
+<!-- Still Working On It -->
+<nav class="w3-bar w3-black">
+  <a href="#Home" class="w3-button w3-bar-item">Home</a>
+  <a href="#Projects" class="w3-button w3-bar-item">Projects</a>
+  <a href="#AboutMe" class="w3-button w3-bar-item">About Me</a>
+  <a href="#Contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="img_band_la.jpg" style="width:100%">
+  <img class="mySlides" src="img_band_ny.jpg" style="width:100%">
+  <img class="mySlides" src="img_band_chicago.jpg" style="width:100%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+<!-- About Me :pp -->
+<section class="w3-container w3-center w3-content" style="max-width:600px; margin-top: 20px;">
+  <h2 class="w3-wide">ALEX TODADZE</h2>
+  
+  <!-- yapping -->
+  <p class="w3-opacity"><i>I'm spending way too much time on this.</i></p>
+  
+  <!-- yapping+ -->
+  <p class="w3-justify">Hi! I'm Alex, a professional procrastinator who specializes in finishing any type of work at the last second.</p>
+  
+  <!-- yapping++ -->
+  <p class="w3-opacity"><i>Please, let's not talk about the quality :)</i></p>
+  <p class="w3-justify">I’ve dabbled with writing basic kernel drivers (don’t expect more than a “Hello World” in the Linux kernel). I also attempted to complete the UWE5622 driver for OpenWRT, but due to my “can’t commit for long” syndrome, the project is currently on hold.</p>
+  
+  <!-- UwUSOC comment -->
+  <p class="w3-opacity"><i>Mandatory whining that UNISOC SUCKS</i></p>
+  
+  <!-- change languge -->
+  <p class="w3-justify">Additionally, I speak Spanish, Russian, Georgian, and English (though I’d be really surprised if any of them would even qualify as A1 level).</p>
+  
+    <p class="w3-justify">also the tabs don't work atm cuz ive got no idea how those need to be implemented.</p>
+      <p class="w3-opacity"><i>I use Arch BTW</i></p>
+</section>
+
+</body>
+</html>
